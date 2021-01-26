@@ -19,7 +19,7 @@
 body{
   font-family: meriendabold;
   height: 100vh;
-  background: url(../img/fondPagePrincipal.png) center no-repeat;
+  background: url("../img/fondPagePrincipal.png") center no-repeat;
   background-size: cover;
 
 }
@@ -30,7 +30,7 @@ array{
 
 .ndPrincipal{
   width: 100%;
-  
+  text-align: center;
 }
 .ndPrincipal:before {
   content: "";
@@ -44,7 +44,11 @@ array{
 }
 
 
-@media (min-width : 992px){
+.ndMarg{
+  margin-top : 75px;
+}
+
+@media (min-width : 992px){ 
   body{
     display: flex;
     justify-content: right;
@@ -58,6 +62,21 @@ array{
     width: 100%;
     color : white;
     font-size: 30px;
+  }
+
+  .ndPrincipal .ndTextAccueil{
+    height : 400px;
+    font-size: 50px;
+    color: white;
+    padding-top : 35px;
+    text-align: center;
+  }
+
+  .ndPrincipal #ndMajA{
+    font-size: 130px;
+  }
+  form button{
+    margin-top : 25px;
   }
 }
 
@@ -83,5 +102,29 @@ array{
 }
 
 form.ndForm label{
-  font-size : 15px;
+  font-size : 25px;
+}
+
+.ndForm button{
+  background-color: #7e5253;
+  color : white;
+  width : 250px;
+  height : 50px;
+}
+
+.ndContForm{
+  padding-bottom : 25px;
+}
+
+.ndTextAccueil{
+ 
+  height : 200px;
+    font-size: 25px;
+    color: white;
+    padding-top : 15px;
+    width: 100%;
+}
+
+#ndMajA{
+  font-size: 65px;
 }

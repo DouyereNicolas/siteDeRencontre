@@ -13,51 +13,61 @@
   <body>
   <div class="ndPrincipal">
     <div class="row  m-4 p-0">
-      <div class="col-12 col-lg-6 border text-center">
+      <div class="col-12 col-lg-7 mb-4">
         <img src="../assets/img/arabesque.png" style="width : 80%;"/>
+          <div class="ndTextAccueil">
+            <p>Vivez l'amour</p>
+            <p>avec un grand</p>
+            <p id="ndMajA">A</p>
+          </div>
         <img src="../assets/img/arabesqueRetourner.png" style="width : 80%;"/>
       </div>
-      <div class="col-12 col-lg-6 ">
-      <div class="ndContForm container d-flex ">
-      <form class="mx-auto ndForm  text-center">
+      <div class="col-12 col-lg-5 mt-4">
+        <div class="ndContForm container d-flex ">
+           <form class="mx-auto ndForm text-center" method="post" action="index.php">
           <p> Inscrivez-Vous </p>
           <div class="row mt-4">
             <div class="col-6">
-            <input type="text" class="form-control" placeholder="First name">
+            <input type="text" class="form-control" name="lastName" placeholder="Nom de Famille">
             </div>
             <div class="col-6">
-            <input type="text" class="form-control" placeholder="First name">
+            <input type="text" class="form-control" name="firstName" placeholder="Prénom">
             </div>
           </div>
           <div class="row mt-4">
             <div class="col-6">
-            <input type="text" class="form-control" placeholder="First name">
+            <input type="text" class="form-control" name="age" placeholder="Age">
             </div>
             <div class="col-6">
-            <input type="text" class="form-control" placeholder="First name">
+              <select id="gender" name="gender" class="form-control">
+                <option selected>Homme</option>
+                <option>Femme</option>
+              </select>
             </div>
           </div>
           <div class="row mt-4  mb-4">
             <div class="col-6">
-            <input type="text" class="form-control" placeholder="First name">
+            <input type="text" class="form-control" name="zipCode" placeholder="Code Postal">
             </div>
             <div class="col-6">
-            <input type="text" class="form-control" placeholder="First name">
+            <input type="text" class="form-control" name="mail" placeholder="Adresse Email">
             </div>
           </div>
           <div class="row mt-4  mb-4">
             <div class="col-6">
-              <input type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
-              <label for="gridRadios1"> First radio </label>
+              <input type="radio" name="typeGender" id="typeGender" value="Homme" checked>
+              <label for="typeGender"> Homme </label>
             </div>
             <div class="col-6">
-              <input type="radio" name="gridRadios" id="gridRadios1" value="option1">
-              <label for="gridRadios1"> First radio </label>
+              <input type="radio" name="typeGender" id="typeGender" value="Femme">
+              <label for="typeGender"> Femme </label>
             </div>
           </div>
-
-          
-
+          <div class="row">
+            <div class="col-12">
+            <button class="btn" type="submit">Trouve l'Amour</button>
+            </div>
+          </div>
         </form> 
       </div>  
       </div>
