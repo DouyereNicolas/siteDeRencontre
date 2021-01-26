@@ -1,3 +1,87 @@
+@font-face {
+  font-family: 'meriendabold';
+  src: url('../font/merienda-bold-webfont.woff2') format('woff2'),
+       url('../font/merienda-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'meriendaregular';
+  src: url('../font/merienda-regular-webfont.woff2') format('woff2'),
+       url('../font/merienda-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+body{
+  font-family: meriendabold;
+  height: 100vh;
+  background: url(../img/fondPagePrincipal.png) center no-repeat;
+  background-size: cover;
+
+}
+
 array{
   background-color: azure;
+}
+
+.ndPrincipal{
+  width: 100%;
+  
+}
+.ndPrincipal:before {
+  content: "";
+  background-color: #e5c598;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.35;
+}
+
+
+@media (min-width : 992px){
+  body{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+  }
+  .ndContForm{
+    height : 500px;
+  }
+  form.ndForm{
+    margin-top : 45px;
+    width: 100%;
+    color : white;
+    font-size: 30px;
+  }
+}
+
+
+.ndContForm::before{
+  content: "";
+  background-color: #ebd2be;
+  border : 5px solid #d7b4a5;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.8;
+  z-index : -1;
+}
+
+.ndForm{
+  margin-top : 25px;
+  width: 100%;
+  color : white;
+  font-size: 25px;
+}
+
+form.ndForm label{
+  font-size : 15px;
 }
