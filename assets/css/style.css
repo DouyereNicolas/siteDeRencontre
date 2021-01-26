@@ -19,7 +19,7 @@
 body{
   font-family: meriendabold;
   height: 100vh;
-  background: url(../img/fondPagePrincipal.png) center no-repeat;
+  background: url(assets/img/fondPagePrincipal.png) center no-repeat;
   background-size: cover;
 
 }

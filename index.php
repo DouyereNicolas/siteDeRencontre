@@ -4,7 +4,7 @@
 <head>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/style.css">
   <title>Site de rencontre</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
@@ -12,29 +12,13 @@
 </head>
 
 <body>
-  création et affichage du tableau des zamoureux...<br>
-  <?php require('controllers/lovers_controller.php'); ?>
-
-  <?php
-  $ArrayMembersNEW = CreatTabMembers();
-  //var_dump($ArrayMembersNEW);
-
-  $MemberInfo = extractMember($ArrayMembersNEW, 10);
-  var_dump($MemberInfo);
-
-  $lastname = showMemberDetails($MemberInfo, 'lastname');
-  $firstaname = showMemberDetails($MemberInfo, 'firstname');
-  $picture = showMemberDetails($MemberInfo, 'picture');
-  var_dump($picture);
-  ?>
-  Bonjour <?= $firstaname . ' ' . ucwords($lastname) . '<br>' ?>
-  <img src="assets/img/member_06.jpg" alt="photo du membre"><br>
+  
 
     <div class="ndPrincipal">
       <div class="row  m-4 p-0">
         <div class="col-12 col-lg-6 border text-center">
-          <img src="../assets/img/arabesque.png" style="width : 80%;" />
-          <img src="../assets/img/arabesqueRetourner.png" style="width : 80%;" />
+          <img src="assets/img/arabesque.png" style="width : 80%;" />
+          <img src="assets/img/arabesqueRetourner.png" style="width : 80%;" />
         </div>
         <div class="col-12 col-lg-6 ">
           <div class="ndContForm container d-flex ">
