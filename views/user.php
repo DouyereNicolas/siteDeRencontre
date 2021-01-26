@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang=fr>
 
@@ -11,6 +14,35 @@
 
 <body class="VbBodyUser">
 
+<?php
+
+
+var_dump ($_POST);
+
+if (!empty($_POST)) {
+ 
+ 
+  echo 'formulaire rempli <br>';
+   
+
+    $lastname = htmlspecialchars($_POST['lastname']);
+    $firstname = htmlspecialchars($_POST['firstname']); 
+  
+
+
+    //ajouter le nouvel inscrit au tableau
+
+    //initialiser les cookies
+    //setcookie('login', $login, time()+24*60*60); // en sec.
+   // setcookie('pwd', $pwd, time()+24*60*60);
+    //header("Location: index.php");
+      //affichage résultat en html
+
+
+?>
+
+recupération des valeurs de  $_POST<br>
+nom: <?= $lastname ?> et prénom :<?= $firstname ?><br>
 
 
   <?php require('../controllers/lovers_controller.php'); ?>
@@ -64,6 +96,14 @@
       </div>
     </div>
   </div>
+
+<?php
+
+}
+else{
+  header("Location: ../index.php");  //formulaire non rempli !!
+}
+?>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
