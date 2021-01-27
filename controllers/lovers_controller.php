@@ -4,7 +4,7 @@ function CreatTabMembers(){
   $ArrayMembers = [
   ['lastname' => 'ripley', 
   'firstname' => 'ellen', 
-  'age' => '30ans, ', 
+  'age' => '30ans ', 
   'gender' =>'femme', 
   'mail' => 'ellen.ripley@mail.com', 
   'zipcode' => '76600',
@@ -15,7 +15,7 @@ function CreatTabMembers(){
   
   ['lastname' => 'granger', 
   'firstname' => 'hermione', 
-  'age' => '27ans, ', 
+  'age' => '27ans ', 
   'gender' =>'femme', 
   'mail' => 'hermione.granger@mail.com', 
   'zipcode' => '76600',
@@ -26,7 +26,7 @@ function CreatTabMembers(){
 
   ['lastname' => 'everdeen ', 
   'firstname' => 'katniss', 
-  'age' => '25ans, ', 
+  'age' => '25ans ', 
   'gender' =>'femme', 
   'mail' => 'katniss.everdeen@mail.com', 
   'zipcode' => '76600',
@@ -37,7 +37,7 @@ function CreatTabMembers(){
 
   ['lastname' => 'connor', 
   'firstname' => 'sarah', 
-  'age' => '25ans, ', 
+  'age' => '25ans ', 
   'gender' =>'femme', 
   'mail' => 'sarah.connor@mail.com', 
   'zipcode' => '76600',
@@ -48,7 +48,7 @@ function CreatTabMembers(){
 
   ['lastname' => 'sachs', 
   'firstname' => 'andrea', 
-  'age' => '25ans, ', 
+  'age' => '25ans ', 
   'gender' =>'femme', 
   'mail' => 'andrea.sachs@mail.com', 
   'zipcode' => '76600',
@@ -59,7 +59,7 @@ function CreatTabMembers(){
 
   ['lastname' => 'jones', 
   'firstname' => 'bridget', 
-  'age' => '25ans, ', 
+  'age' => '25ans ', 
   'gender' =>'femme', 
   'mail' => 'bridget.jones@mail.com', 
   'zipcode' => '76600',
@@ -70,7 +70,7 @@ function CreatTabMembers(){
 
   ['lastname' => 'wonder Woman', 
   'firstname' => 'diana', 
-  'age' => '25ans, ', 
+  'age' => '25ans ', 
   'gender' =>'femme', 
   'mail' => 'wonder.woman@mail.com', 
   'zipcode' => '76600',
@@ -81,7 +81,7 @@ function CreatTabMembers(){
 
   ['lastname' => 'croft', 
   'firstname' => 'lara', 
-  'age' => '25ans, ', 
+  'age' => '25ans ', 
   'gender' =>'femme', 
   'mail' => 'lara.croft@mail.com', 
   'zipcode' => '76600',
@@ -92,7 +92,7 @@ function CreatTabMembers(){
 
   ['lastname' => 'amidala', 
   'firstname' => 'padmé', 
-  'age' => '25ans, ', 
+  'age' => '25ans ', 
   'gender' =>'femme', 
   'mail' => 'padmé.amidala@mail.com', 
   'zipcode' => '76600',
@@ -103,7 +103,7 @@ function CreatTabMembers(){
 
   ['lastname' => 'Undómiel', 
   'firstname' => 'Arwen', 
-  'age' => '25ans, ', 
+  'age' => '25ans ', 
   'gender' =>'femme', 
   'mail' => 'Arwen.Undomiel@mail.com', 
   'zipcode' => '76600',
@@ -114,7 +114,7 @@ function CreatTabMembers(){
 
   ['lastname' => 'skywalker', 
   'firstname' => 'anakin', 
-  'age' => '25ans, ', 
+  'age' => '25ans ', 
   'gender' =>'homme', 
   'mail' => 'anakin.skywalker@mail.com', 
   'zipcode' => '76600',
@@ -125,7 +125,7 @@ function CreatTabMembers(){
 
   ['lastname' => 'sparrow', 
   'firstname' => 'jack', 
-  'age' => '25ans, ', 
+  'age' => '25ans ', 
   'gender' =>'homme', 
   'mail' => 'jack.sparrow@mail.com', 
   'zipcode' => '76600',
@@ -136,7 +136,7 @@ function CreatTabMembers(){
 
   ['lastname' => 'bond', 
   'firstname' => 'james', 
-  'age' => '45ans, ', 
+  'age' => '45ans ', 
   'gender' =>'homme', 
   'mail' => 'james.bond@mail.com', 
   'zipcode' => '76600',
@@ -147,7 +147,7 @@ function CreatTabMembers(){
 
   ['lastname' => 'brown', 
   'firstname' => 'emmet', 
-  'age' => '75ans, ', 
+  'age' => '75ans ', 
   'gender' =>'homme', 
   'mail' => 'emmet.brown@mail.com', 
   'zipcode' => '76600',
@@ -158,7 +158,7 @@ function CreatTabMembers(){
 
   ['lastname' => 'dawson', 
   'firstname' => 'jack', 
-  'age' => '25ans, ', 
+  'age' => '25ans ', 
   'gender' =>'homme', 
   'mail' => 'jack.dawson@mail.com', 
   'zipcode' => '76600',
@@ -169,7 +169,7 @@ function CreatTabMembers(){
 
   ['lastname' => 'callahan', 
   'firstname' => 'harry', 
-  'age' => '55ans, ', 
+  'age' => '55ans ', 
   'gender' =>'homme', 
   'mail' => 'harry.callahan@mail.com', 
   'zipcode' => '76600',
@@ -181,7 +181,7 @@ function CreatTabMembers(){
 
   ['lastname' => 'mcClane', 
   'firstname' => 'john', 
-  'age' => '65ans, ', 
+  'age' => '65ans ', 
   'gender' =>'homme', 
   'mail' => 'john.mclane@mail.com', 
   'zipcode' => '76600',
@@ -192,7 +192,7 @@ function CreatTabMembers(){
 
   ['lastname' => 'jones', 
   'firstname' => 'indiana', 
-  'age' => '45ans, ', 
+  'age' => '45ans ', 
   'gender' =>'homme', 
   'mail' => 'indiana.jones@mail.com', 
   'zipcode' => '76600',
@@ -203,7 +203,7 @@ function CreatTabMembers(){
 
   ['lastname' => 'wilson', 
   'firstname' => 'wade', 
-  'age' => '35ans, ', 
+  'age' => '35ans ', 
   'gender' =>'homme', 
   'mail' => 'kint.verbal@mail.com', 
   'zipcode' => '76600',
@@ -214,7 +214,7 @@ function CreatTabMembers(){
 
   ['lastname' => 'lannister', 
   'firstname' => 'tyrion', 
-  'age' => '25ans, ', 
+  'age' => '25ans ', 
   'gender' =>'homme', 
   'mail' => 'tyrion.lannister@mail.com', 
   'zipcode' => '76600',
@@ -224,7 +224,18 @@ function CreatTabMembers(){
   'description' => 'Je suis surnommé le Lutin, Je suis le troisième enfant de lord Tywin Lannister, et donc le frère de Cersei et Jaime Lannister.  Je préfére la lecture et les arts à la chevalerie.'],
 
 ];
-return $ArrayMembers;
+  $array = ['lastname' => 'ripley', 
+  'firstname' => 'ellen', 
+  'age' => '30ans ', 
+  'gender' =>'femme', 
+  'mail' => 'ellen.ripley@mail.com', 
+  'zipcode' => '76600',
+  'genderSearch' => 'homme',
+  'match' => '0',
+  'picture' => 'ellen_00.jpg', 
+  'description' => 'Je suis lieutenant de première classe '];
+
+  return $ArrayMembers;
 //var_dump($ArrayMembers);
 }
 

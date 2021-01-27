@@ -9,7 +9,7 @@ let active = 0;
 next.addEventListener('click', () => {
     slider.classList.toggle('zoom');
 
-    currdeg = currdeg - 90;
+    currdeg = currdeg - 36;
 
     if (active === item.length - 1) {
         active = 0;
@@ -23,7 +23,7 @@ next.addEventListener('click', () => {
 prev.addEventListener('click', () => {
     slider.classList.toggle('zoom');
 
-    currdeg = currdeg + 90;
+    currdeg = currdeg + 36;
 
     if (active === 0) {
         active = item.length - 1;

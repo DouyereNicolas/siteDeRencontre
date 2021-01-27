@@ -1,6 +1,10 @@
+<?php 
+  include("../controllers/lovers_controller.php"); 
+  $arrayMembers = CreatTabMembers();
+?>
 <!DOCTYPE html>
 <html>
-<head lang="ru">
+<head lang="fr">
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>3D Carousel</title>
@@ -24,45 +28,51 @@
     </script>
 </head>
 <body>
-
-<div class="slider">
-    <div class="wrapper">
-        <div style="background-image: url('../assets/img/anakin_10.jpg')" class="item item1 active">
-            <div class="item__info">
-                <p class="item__year"><span>1483 - 1484</span></p>
-                <p class="item__name"><span>BIRH OF VENUS</span></p>
-                <form action="lovers.php" method="post">
-                    <input type="submit" class="btn2" name="match" value="test"/>
-                </form>
-            </div>
-        </div>
-        <div style="background-image: url('../assets/img/harry_15.jpg')" class="item item2">
-            <div class="item__info">
-                <p class="item__year"><span>1481 - 1484</span></p>
-                <p class="item__name"><span>BIRH OF VENUS</span></p>
-                <a href="javascript:void(0)" class="btn2"><span>MATCH</span></a>
-            </div>
-        </div>
-        <div style="background-image: url('../assets/img/james_12.jpg')" class="item item3">
-            <div class="item__info">
-                <p class="item__year"><span>1500 - 1501</span></p>
-                <p class="item__name"><span>THE STORY OF VIRGINIA</span></p>
-                <a href="javascript:void(0)" class="btn2"><span>MATCH</span></a>
-            </div>
-        </div>
-        <div style="background-image: url('../assets/img/james_12.jpg')" class="item item4">
-            <div class="item__info">
-                <p class="item__year"><span>1500 - 1501</span></p>
-                <p class="item__name"><span>THE STORY OF VIRGINIA</span></p>
-                <a href="javascript:void(0)" class="btn2"><span>MATCH</span></a>
-            </div>
-        </div>
-    </div>
-
-    <div class="arrow arrow-next"></div>
-    <div class="arrow arrow-prev"></div>
+    
+<div class="row m-0 text-white" style="background-color:#ebd2bb;width:100%;height:50px;position:absolute;top:0;left:0;border:2px solid #7e5253">
+    <div class="col-4 border">Bonjour, Monsieur Douyere</div>
+    <div class="col-4 border"><a href="">Match</a></div>
+    <div class="col-4 border"><a href="">User</a></div>
 </div>
 
+    <div class="slider">
+        <div class="wrapper ">
+        <?php 
+            $item = 0;
+            foreach($arrayMembers as $key => $value){
+                if($value["gender"] == "femme"){
+                    $lastName = $value['lastname'];    
+                    $firstName = $value['firstname'];
+                    $age = $value['age'];
+                    $picture = $value['picture'];
+                    $match = $value['match'];
+                    $item = $key + 1;
+            
+            if($item == 1){ ?>
+                <div style="background-image: url('../assets/img/<?=$picture;?>')" class="item item<?=$item?> active">
+            <?php }else{?>
+                <div style="background-image: url('../assets/img/<?=$picture;?>')" class="item item<?=$item?>">
+            <?php };?>
+            
+                <div class="item__info ">
+                    <p class="item__year ndText2"><span><?=ucfirst($lastName);?> <?=$firstName;?></span></p>
+                    <p class="item__name ndText"><span>j'ai <?=$age;?></span></p>
+                    <form action="lovers.php" method="post">
+                        <input type="image" class="btn2 buttonTest" id="match" alt="Match" src="../assets/img/coeurVide.png">
+                    </form>
+                </div>
+            </div>
+
+        <?php
+        };
+        };
+            
+        ?>
+        </div>
+
+        <div class="arrow arrow-next"></div>
+        <div class="arrow arrow-prev"></div>
+    </div>
 <script src="../assets/js/script.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
