@@ -67,45 +67,10 @@
               </form> 
             </div>  
           </div>
-      <div class="row mt-4">
-        <div class="col-6">
-          <input type="text" class="form-control" name="age" placeholder="Age" value="20">
-        </div>
-        <div class="col-6">
-          <select id="gender" name="gender" class="form-control">
-            <option selected>Homme</option>
-            <option>Femme</option>
-          </select>
-        </div>
-      </div>
-      <div class="row mt-4  mb-4">
-        <div class="col-6">
-          <input type="text" class="form-control" name="zipCode" placeholder="Code Postal" value="76620">
-        </div>
-        <div class="col-6">
-          <input type="text" class="form-control" name="mail" placeholder="Adresse Email" value="exemple">
-        </div>
-      </div>
-      <div class="row mt-4  mb-4">
-        <div class="col-6">
-          <input type="radio" name="typeGender" id="typeGender" value="Homme" checked>
-          <label for="typeGender"> Homme </label>
-        </div>
-        <div class="col-6">
-          <input type="radio" name="typeGender" id="typeGender" value="Femme">
-          <label for="typeGender"> Femme </label>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12">
-          <button class="btn" type="submit">Trouve l'Amour</button>
-        </div>
-      </div>
-      </form>
+
     </div>
   </div>
-  </div>
-  </div>
+
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
