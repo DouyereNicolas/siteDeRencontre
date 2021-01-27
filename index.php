@@ -19,19 +19,19 @@
           </div>
           <div class="col-12 col-lg-5 mt-4">
             <div class="ndContForm container d-flex text-center">
-              <form class="mx-auto ndForm text-center" method="post" action="index.php">
+              <form class="mx-auto ndForm text-center" method="post" action="views/user.php">
                 <p> Inscrivez-Vous </p>
                 <div class="row mt-4">
                   <div class="col-6">
-                    <input type="text" class="form-control" name="lastname" placeholder="Nom de Famille">
+                    <input type="text" class="form-control" name="lastname" placeholder="Nom de Famille" value="lastname">
                   </div>
                   <div class="col-6">
-                    <input type="text" class="form-control" name="firstame" placeholder="Prénom">
+                    <input type="text" class="form-control" name="firstname" placeholder="Prénom" value="firstname">
                   </div>
                 </div>
                 <div class="row mt-4">
                   <div class="col-6">
-                    <input type="text" class="form-control" name="age" placeholder="Age">
+                    <input type="text" class="form-control" name="age" placeholder="Age" value="17">
                   </div>
                   <div class="col-6">
                     <select id="gender" name="gender" class="form-control">
@@ -42,21 +42,21 @@
                 </div>
                 <div class="row mt-4  mb-4">
                   <div class="col-6">
-                    <input type="text" class="form-control" name="zipCode" placeholder="Code Postal">
+                    <input type="text" class="form-control" name="zipCode" placeholder="Code Postal" value="93000">
                   </div>
                   <div class="col-6">
-                    <input type="text" class="form-control" name="mail" placeholder="Adresse Email">
+                    <input type="text" class="form-control" name="mail" placeholder="Adresse Email" value="email@truc.net">
                   </div>
                 </div>
                 <p>Vous etes intéressé par&nbsp;:</p>
                 <div class="row mt-4  mb-4">
                   <div class="col-6">
-                    <input type="radio" name="typeGender" id="typeGender" value="Homme" checked>
-                    <label for="typeGender"> Homme </label>
+                    <input type="radio" name="genderSearch" id="genderSearch" value="Homme" checked>
+                    <label for="genderSearch"> Homme </label>
                   </div>
                   <div class="col-6">
-                    <input type="radio" name="typeGender" id="typeGender" value="Femme">
-                    <label for="typeGender"> Femme </label>
+                    <input type="radio" name="genderSearch" id="genderSearch" value="Femme">
+                    <label for="genderSearch"> Femme </label>
                   </div>
                 </div>
                 <div class="row">
@@ -68,8 +68,7 @@
             </div>  
           </div>
   </div>
-  </div>
-  </div>
+
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
