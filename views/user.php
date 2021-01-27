@@ -1,6 +1,4 @@
 
-
-
 <!DOCTYPE html>
 <html lang=fr>
 
@@ -14,73 +12,29 @@
 
 <body class="VbBodyUser">
 
-<?php
-
-
-
+<?php 
 
 if (!empty($_POST)) {
- 
- 
-  //echo 'formulaire rempli <br>';
-   // recup des valeurs  
   
-    $lastname = htmlspecialchars($_POST['lastname']);
-    $firstname = htmlspecialchars($_POST['firstame']);
-    //$picture = htmlspecialchars($_POST['picture']);
-    $age = htmlspecialchars($_POST['age']);
-    $gender = htmlspecialchars($_POST['gender']);
-    $mail = htmlspecialchars($_POST['mail']);
-    $zipCode = htmlspecialchars($_POST['zipCode']);
-  //$description = htmlspecialchars($_POST['description']);  
-    $genderSearch = htmlspecialchars($_POST['genderSearch']);
-   //$match = htmlspecialchars($_POST['match']);
+  require ('../controllers/user_controller.php'); 
 
+//recupération des valeurs de  $_POST<br>
+// $lastname = $_POST['lastname'];
+// $firstname = $_POST['firstname'];
 
-    //ajouter le nouvel inscrit au tableau
+// Déclaration d'un tableau associatif
+$arrayInfoUser= array(
+  'lastname' => ucfirst(htmlspecialchars($_POST['lastname'])), 
+  'firstname' => htmlspecialchars($_POST['firstname']), 
+  'age' => htmlspecialchars($_POST['age']),
+  'gender' => htmlspecialchars($_POST['gender']), 
+  'mail' => htmlspecialchars($_POST['mail']), 
+  'zipCode' => htmlspecialchars($_POST['zipCode']),  
+  'genderSearch' => htmlspecialchars($_POST['genderSearch'])
+);
 
-    //initialiser les cookies
-    //setcookie('login', $login, time()+24*60*60); // en sec.
-   // setcookie('pwd', $pwd, time()+24*60*60);
-    //header("Location: index.php");
-      //affichage résultat en html
-
-
+setcookie('arrayInfoUser', serialize($arrayInfoUser), time() + 24 * 3600); //  ** pour 2jours
 ?>
-
-recupération des valeurs de  $_POST<br>
-nom: <?= $lastname ?> et prénom :<?= $firstname ?><br>
-
-
-  <?php require('../controllers/lovers_controller.php'); ?>
-  <!-- // création et affichage du tableau des zamoureux...<br> -->
-
-  <?php
-  $ArrayMembersNEW = CreatTabMembers();
-  //var_dump($ArrayMembersNEW);
-
-  $MemberInfo = extractMember($ArrayMembersNEW, 10);
-  //var_dump($MemberInfo);
-  $lastname = extractMemberDetails($MemberInfo, 'lastname');
-  $firstname = extractMemberDetails($MemberInfo, 'firstname');
-  $picture = extractMemberDetails($MemberInfo, 'picture');
-  $age = extractMemberDetails($MemberInfo, 'age');
-  $gender = extractMemberDetails($MemberInfo, 'gender');
-  $mail = extractMemberDetails($MemberInfo, 'mail');
-  $zipCode = extractMemberDetails($MemberInfo, 'zipCode');
-  $description = extractMemberDetails($MemberInfo, 'description');
-
-  $genderSearch = extractMemberDetails($MemberInfo, 'genderSearch');
-  $match = extractMemberDetails($MemberInfo, 'match');
-  //var_dump($picture);
-
-  ?>
-  <br><br>
-  <br><br>
-  <br>
-
-
-
 
   <div class="container">
     <div class="row ">
@@ -91,15 +45,13 @@ nom: <?= $lastname ?> et prénom :<?= $firstname ?><br>
       </div>
     </div>
     <div class="row ">
-      <div class="col-6">
-        <div class="text-center">
-          <img class="VbPictMember" src="../assets/img/member_08.jpg" alt="photo du membre">
-        </div>
-      </div>
-      <div class="col-6">
+      <div class="col">
         <div class="bg-light text-center">
-        var_dump ($_POST);
-          Bonjour <?= $firstname . ' ' . ucwords($lastname) ?>
+ 
+        Bonjour
+nom: <?= ucfirst($arrayInfoUser['lastname']) ?> et prénom :<?= $arrayInfoUser['firstname'] ?><br>
+  <br>
+    
         </div>
       </div>
     </div>

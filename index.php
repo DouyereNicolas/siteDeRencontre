@@ -26,7 +26,7 @@
                     <input type="text" class="form-control" name="lastname" placeholder="Nom de Famille" value="lastname">
                   </div>
                   <div class="col-6">
-                    <input type="text" class="form-control" name="firstame" placeholder="Prénom" value="firstname">
+                    <input type="text" class="form-control" name="firstname" placeholder="Prénom" value="firstname">
                   </div>
                 </div>
                 <div class="row mt-4">

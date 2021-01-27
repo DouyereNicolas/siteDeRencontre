@@ -1,6 +1,5 @@
 <?php
 function CreatTabMembers(){
-
   $ArrayMembers = [
   ['lastname' => 'ripley', 
   'firstname' => 'ellen', 
@@ -232,7 +231,7 @@ function extractMember($arrayName, $indMember){
  //extrait les infos du ($indMember+1)ème membre du [array] multiDim passé en paramétre.
    //$sous_util = ['lastname' => 'DOE',  etc.. 'description' => 'je suis très']
    $sous_util = $arrayName[$indMember];
-   //var_dump( $sous_util);
+   var_dump( $sous_util);
    return $sous_util;
 
 }
@@ -245,4 +244,3 @@ function extractMemberDetails($arrayName, $info){
   return $myinfo;
 }
 
-//$nbrlg = count($HtdeFr); pour compter le nbre de lg d'un tableau
