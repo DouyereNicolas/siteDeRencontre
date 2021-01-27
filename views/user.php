@@ -17,17 +17,24 @@
 <?php
 
 
-var_dump ($_POST);
+
 
 if (!empty($_POST)) {
  
  
-  echo 'formulaire rempli <br>';
-   // recup des valeurs 
-
-    $lastname = htmlspecialchars($_POST['lastname']);
-    $firstname = htmlspecialchars($_POST['firstname']); 
+  //echo 'formulaire rempli <br>';
+   // recup des valeurs  
   
+    $lastname = htmlspecialchars($_POST['lastname']);
+    $firstname = htmlspecialchars($_POST['firstame']);
+    //$picture = htmlspecialchars($_POST['picture']);
+    $age = htmlspecialchars($_POST['age']);
+    $gender = htmlspecialchars($_POST['gender']);
+    $mail = htmlspecialchars($_POST['mail']);
+    $zipCode = htmlspecialchars($_POST['zipCode']);
+  //$description = htmlspecialchars($_POST['description']);  
+    $genderSearch = htmlspecialchars($_POST['genderSearch']);
+   //$match = htmlspecialchars($_POST['match']);
 
 
     //ajouter le nouvel inscrit au tableau
@@ -60,7 +67,7 @@ nom: <?= $lastname ?> et prénom :<?= $firstname ?><br>
   $age = extractMemberDetails($MemberInfo, 'age');
   $gender = extractMemberDetails($MemberInfo, 'gender');
   $mail = extractMemberDetails($MemberInfo, 'mail');
-  $zipcode = extractMemberDetails($MemberInfo, 'zipcode');
+  $zipCode = extractMemberDetails($MemberInfo, 'zipCode');
   $description = extractMemberDetails($MemberInfo, 'description');
 
   $genderSearch = extractMemberDetails($MemberInfo, 'genderSearch');
@@ -91,6 +98,7 @@ nom: <?= $lastname ?> et prénom :<?= $firstname ?><br>
       </div>
       <div class="col-6">
         <div class="bg-light text-center">
+        var_dump ($_POST);
           Bonjour <?= $firstname . ' ' . ucwords($lastname) ?>
         </div>
       </div>
