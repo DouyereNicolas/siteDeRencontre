@@ -23,7 +23,7 @@ if (!empty($_POST)) {
  
  
   echo 'formulaire rempli <br>';
-   
+   // recup des valeurs 
 
     $lastname = htmlspecialchars($_POST['lastname']);
     $firstname = htmlspecialchars($_POST['firstname']); 
