@@ -40,14 +40,13 @@
         <?php 
             $item = 0;
             foreach($arrayMembers as $key => $value){
-                if($value["gender"] == "femme"){
+                if($value["gender"] == "homme"){
                     $lastName = $value['lastname'];    
                     $firstName = $value['firstname'];
                     $age = $value['age'];
                     $picture = $value['picture'];
                     $match = $value['match'];
-                    $item = $key + 1;
-            
+                    $item = $item + 1;
             if($item == 1){ ?>
                 <div style="background-image: url('../assets/img/<?=$picture;?>')" class="item item<?=$item?> active">
             <?php }else{?>

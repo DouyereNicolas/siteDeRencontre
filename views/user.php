@@ -34,6 +34,7 @@ $arrayInfoUser= array(
 );
 
 setcookie('arrayInfoUser', serialize($arrayInfoUser), time() + 24 * 3600); //  ** pour 2jours
+include("../views/lovers.php");
 ?>
 
   <div class="container">

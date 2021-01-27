@@ -6,6 +6,7 @@
       <link rel="stylesheet" href="assets/css/style.css">
     </head>
     <body>
+      
       <div class="ndPrincipal">
         <div class="row  m-4 p-0">
           <div class="col-12 col-lg-7 mb-4">
