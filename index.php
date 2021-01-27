@@ -8,19 +8,19 @@
 
       <!-- Bootstrap CSS -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-      <link rel="stylesheet" href="../assets/css/style.css">
+      <link rel="stylesheet" href="assets/css/style.css">
     </head>
     <body>
       <div class="ndPrincipal">
         <div class="row  m-4 p-0">
           <div class="col-12 col-lg-7 mb-4">
-            <img src="../assets/img/arabesque.png" style="width : 80%;"/>
+            <img src="assets/img/arabesque.png" style="width : 80%;"/>
             <div class="ndTextAccueil">
               <p>Vivez l'amour</p>
               <p>avec un grand</p>
               <p id="ndMajA">A</p>
             </div>
-            <img src="../assets/img/arabesqueRetourner.png" style="width : 80%;"/>
+            <img src="assets/img/arabesqueRetourner.png" style="width : 80%;"/>
           </div>
           <div class="col-12 col-lg-5 mt-4">
             <div class="ndContForm container d-flex text-center">
@@ -53,7 +53,7 @@
                     <input type="text" class="form-control" name="mail" placeholder="Adresse Email">
                   </div>
                 </div>
-                <p>Vous etes intéressez par :</p>
+                <p>Vous etes intéressé par&nbsp;:</p>
                 <div class="row mt-4  mb-4">
                   <div class="col-6">
                     <input type="radio" name="typeGender" id="typeGender" value="Homme" checked>

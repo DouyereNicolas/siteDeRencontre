@@ -1,16 +1,71 @@
-<!doctype html>
-  <html lang="fr">
-    <head>
-      <title>Site de rencontre</title>
-      <!-- Required meta tags -->
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>3D Carousel</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=1024">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
 
-      <!-- Bootstrap CSS -->
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-      <link rel="stylesheet" href="../assets/css/style.css">
-    </head>
+    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--> 
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-31485994-5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-31485994-5');
+    </script>
+</head>
 <body>
 
+<div class="slider">
+    <div class="wrapper">
+        <div style="background-image: url('../assets/img/anakin_10.jpg')" class="item item1 active">
+            <div class="item__info">
+                <p class="item__year"><span>1483 - 1484</span></p>
+                <p class="item__name"><span>BIRH OF VENUS</span></p>
+                <form action="lovers.php" method="post">
+                    <input type="submit" class="btn2" name="match" value="test"/>
+                </form>
+            </div>
+        </div>
+        <div style="background-image: url('../assets/img/harry_15.jpg')" class="item item2">
+            <div class="item__info">
+                <p class="item__year"><span>1481 - 1484</span></p>
+                <p class="item__name"><span>BIRH OF VENUS</span></p>
+                <a href="javascript:void(0)" class="btn2"><span>MATCH</span></a>
+            </div>
+        </div>
+        <div style="background-image: url('../assets/img/james_12.jpg')" class="item item3">
+            <div class="item__info">
+                <p class="item__year"><span>1500 - 1501</span></p>
+                <p class="item__name"><span>THE STORY OF VIRGINIA</span></p>
+                <a href="javascript:void(0)" class="btn2"><span>MATCH</span></a>
+            </div>
+        </div>
+        <div style="background-image: url('../assets/img/james_12.jpg')" class="item item4">
+            <div class="item__info">
+                <p class="item__year"><span>1500 - 1501</span></p>
+                <p class="item__name"><span>THE STORY OF VIRGINIA</span></p>
+                <a href="javascript:void(0)" class="btn2"><span>MATCH</span></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="arrow arrow-next"></div>
+    <div class="arrow arrow-prev"></div>
+</div>
+
+<script src="../assets/js/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>    
 </body>
 </html>
