@@ -8,19 +8,19 @@
 
       <!-- Bootstrap CSS -->
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-      <link rel="stylesheet" href="../assets/css/style.css">
+      <link rel="stylesheet" href="assets/css/style.css">
     </head>
     <body>
       <div class="ndPrincipal">
         <div class="row  m-4 p-0">
           <div class="col-12 col-lg-7 mb-4">
-            <img src="../assets/img/arabesque.png" style="width : 80%;"/>
+            <img src="assets/img/arabesque.png" style="width : 80%;"/>
             <div class="ndTextAccueil">
               <p>Vivez l'amour</p>
               <p>avec un grand</p>
               <p id="ndMajA">A</p>
             </div>
-            <img src="../assets/img/arabesqueRetourner.png" style="width : 80%;"/>
+            <img src="assets/img/arabesqueRetourner.png" style="width : 80%;"/>
           </div>
           <div class="row mt-4">
             <div class="col-6">
