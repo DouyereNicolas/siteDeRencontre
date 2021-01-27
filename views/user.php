@@ -1,70 +1,47 @@
-
-<!DOCTYPE html>
-<html lang=fr>
-
-<head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../assets/css/style.css">
-  <title>USER INFO</title>
-</head>
-
-<body class="VbBodyUser">
-
 <?php 
-
-if (!empty($_POST)) {
-  
-  require ('../controllers/user_controller.php'); 
-
-//recupération des valeurs de  $_POST<br>
-// $lastname = $_POST['lastname'];
-// $firstname = $_POST['firstname'];
-
-// Déclaration d'un tableau associatif
-$arrayInfoUser= array(
-  'lastname' => ucfirst(htmlspecialchars($_POST['lastname'])), 
-  'firstname' => htmlspecialchars($_POST['firstname']), 
-  'age' => htmlspecialchars($_POST['age']),
-  'gender' => htmlspecialchars($_POST['gender']), 
-  'mail' => htmlspecialchars($_POST['mail']), 
-  'zipCode' => htmlspecialchars($_POST['zipCode']),  
-  'genderSearch' => htmlspecialchars($_POST['genderSearch'])
-);
-
-setcookie('arrayInfoUser', serialize($arrayInfoUser), time() + 24 * 3600); //  ** pour 2jours
-include("../views/lovers.php");
+  include("../controllers/lovers_controller.php"); 
+  $arrayMembers = CreatTabMembers();
+  $arrayCurrentUser = unserialize($_COOKIE["arrayInfoUser"]);
+  $lastNameUser = $arrayCurrentUser["lastname"];
+  $firstNameUser = $arrayCurrentUser["firstname"];
 ?>
-
-  <div class="container">
-    <div class="row ">
-      <div class="col">
-        <div class="text-center">
-          <h1>Bienvenue sur notre site </h1>
-        </div>
-      </div>
-    </div>
-    <div class="row ">
-      <div class="col">
-        <div class="bg-light text-center">
- 
-        Bonjour
-nom: <?= ucfirst($arrayInfoUser['lastname']) ?> et prénom :<?= $arrayInfoUser['firstname'] ?><br>
-  <br>
+<!DOCTYPE html>
+<html>
+<head lang="fr">
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>3D Carousel</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=1024">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
     
-        </div>
+<div class="row m-0 text-white" style="background-color:#ebd2bb;width:100%;height:50px;position:absolute;top:0;left:0;border:2px solid #7e5253">
+    <div class="col-4 border">Bonjour, Monsieur <?=$lastNameUser;?> <?=$firstNameUser;?></div>
+    <div class="col-4 border"><a href="lovers.php">Match</a></div>
+    <div class="col-4 border"><a href="../views/user.php">User</a></div>
+</div>
+
+<div class="row w-100 mx-auto">
+<div class="col-12 col-lg-8">
+  <div class="container border">
+    <div class="card mx-auto" style="width: 80%; height : 500px;">
+      <div class="card-body">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
       </div>
     </div>
   </div>
+  </div>
+  <div class="col-12 col-lg-4 border">
 
-<?php
-
-}
-else{
-  header("Location: ../index.php");  //formulaire non rempli !!
-}
-?>
+  </div>
+  
+</div>
+  
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

@@ -52,11 +52,11 @@
                 <p>Vous etes intéressé par&nbsp;:</p>
                 <div class="row mt-4  mb-4">
                   <div class="col-6">
-                    <input type="radio" name="genderSearch" id="genderSearch" value="Homme" checked>
+                    <input type="radio" name="genderSearch" id="genderSearch" value="homme" checked>
                     <label for="genderSearch"> Homme </label>
                   </div>
                   <div class="col-6">
-                    <input type="radio" name="genderSearch" id="genderSearch" value="Femme">
+                    <input type="radio" name="genderSearch" id="genderSearch" value="femme">
                     <label for="genderSearch"> Femme </label>
                   </div>
                 </div>

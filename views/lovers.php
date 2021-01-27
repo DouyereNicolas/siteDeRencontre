@@ -1,6 +1,9 @@
 <?php 
   include("../controllers/lovers_controller.php"); 
   $arrayMembers = CreatTabMembers();
+  $arrayCurrentUser = unserialize($_COOKIE["arrayInfoUser"]);
+  $lastNameUser = $arrayCurrentUser["lastname"];
+  $firstNameUser = $arrayCurrentUser["firstname"];
 ?>
 <!DOCTYPE html>
 <html>
@@ -30,9 +33,9 @@
 <body>
     
 <div class="row m-0 text-white" style="background-color:#ebd2bb;width:100%;height:50px;position:absolute;top:0;left:0;border:2px solid #7e5253">
-    <div class="col-4 border">Bonjour, Monsieur Douyere</div>
-    <div class="col-4 border"><a href="">Match</a></div>
-    <div class="col-4 border"><a href="">User</a></div>
+    <div class="col-4 border">Bonjour, Monsieur <?=$lastNameUser;?> <?=$firstNameUser;?></div>
+    <div class="col-4 border"><a href="lovers.php">Match</a></div>
+    <div class="col-4 border"><a href="../views/user.php">User</a></div>
 </div>
 
     <div class="slider">
@@ -40,7 +43,7 @@
         <?php 
             $item = 0;
             foreach($arrayMembers as $key => $value){
-                if($value["gender"] == "homme"){
+                if($value["gender"] == $arrayCurrentUser["genderSearch"]){
                     $lastName = $value['lastname'];    
                     $firstName = $value['firstname'];
                     $age = $value['age'];
@@ -54,7 +57,7 @@
             <?php };?>
             
                 <div class="item__info ">
-                    <p class="item__year ndText2"><span><?=ucfirst($lastName);?> <?=$firstName;?></span></p>
+                    <p class="item__year ndText2"><span><?=ucfirst($lastName);?> <?=ucfirst($firstName);?></span></p>
                     <p class="item__name ndText"><span>j'ai <?=$age;?></span></p>
                     <form action="lovers.php" method="post">
                         <input type="image" class="btn2 buttonTest" id="match" alt="Match" src="../assets/img/coeurVide.png">

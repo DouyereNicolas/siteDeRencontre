@@ -14,7 +14,7 @@
 
   <body class="VbBodyUser">
     <div class="container">
-      <div class="row ">
+      <div class="row w-100">
         <div class="col  text-center">
           <h1>Bienvenue sur notre site </h1>
         </div>
@@ -68,6 +68,7 @@
           </div>
         </div>
     </div>
+
   <?php
 
         echo '<br>';
