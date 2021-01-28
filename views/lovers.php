@@ -18,7 +18,6 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="../assets/css/style.css">
-
     <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]--> 
     
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -27,7 +26,6 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'UA-31485994-5');
     </script>
 </head>
@@ -52,7 +50,7 @@
             <?php }else{?>
                 <div style="background-image: url('../assets/img/<?=$picture;?>')" class="item item<?=$item?>">
             <?php };?>
-            
+
                 <div class="item__info ">
                     <p class="item__year ndText2"><span><?=ucfirst($lastName);?> <?=ucfirst($firstName);?></span></p>
                     <p class="item__name ndText"><span>j'ai <?=$age;?></span></p>
@@ -61,14 +59,12 @@
                     </form>
                 </div>
             </div>
-
         <?php
         };
         };
             
         ?>
         </div>
-
         <div class="arrow arrow-next"></div>
         <div class="arrow arrow-prev"></div>
     </div>
