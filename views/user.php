@@ -25,11 +25,7 @@
 </head>
 <body>
   
-<div class="row m-0 text-white" style="background-color:#ebd2bb;width:100%;height:50px;position:absolute;top:0;left:0;border:2px solid #7e5253">
-    <div class="col-4 ">Bonjour, Monsieur <?=$lastNameUser;?> <?=$firstNameUser;?></div>
-    <div class="col-4 "><a href="lovers.php">Match</a></div>
-    <div class="col-4 "><a href="user.php">User</a></div>
-</div>
+<?php include("navBarViews.php");?>
 
 <div class="row w-100 mx-auto ">
 <div class="col-12 col-lg-6 ">
