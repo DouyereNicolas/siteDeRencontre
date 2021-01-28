@@ -18,10 +18,9 @@
 
 body{
   font-family: meriendabold;
-  height: 100vh;
+  /* height: 100vh; */
   background: url("../img/fondPagePrincipal.png") center no-repeat;
   background-size: cover;
-  overflow: hidden;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -140,15 +139,21 @@ form.ndForm label{
 
 
 .VbBodyUser{
-  background-color: #e5c598;
+  background-color:aqua;
   color:black;
 }
 
 .VbPictMember{
-  width: 220px;
-  height:auto;
+  /* width: 220px; */
+  height:170px;
+  border : 2px solid red;
+  margin-top: 20px;
 }
 
+.VBdiv{
+  background-color: darkorange;
+  border : 2px solid red;
+}
 .slider {
   margin: 0 auto;
   width: 100% !important;

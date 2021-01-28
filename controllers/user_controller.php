@@ -15,6 +15,7 @@
   function deleteCookie(){
     setcookie('arrayInfoUser', "", time() +1); 
       // setcookie('login', "", 1);  
+      echo 'dans user_controller <br>';
   }
 
 

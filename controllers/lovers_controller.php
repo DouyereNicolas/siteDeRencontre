@@ -242,7 +242,7 @@ function extractMember($arrayName, $indMember){
  //extrait les infos du ($indMember+1)ème membre du [array] multiDim passé en paramétre.
    //$sous_util = ['lastname' => 'DOE',  etc.. 'description' => 'je suis très']
    $sous_util = $arrayName[$indMember];
-   var_dump( $sous_util);
+   //var_dump( $sous_util);
    return $sous_util;
 
 }
@@ -255,3 +255,33 @@ function extractMemberDetails($arrayName, $info){
   return $myinfo;
 }
 
+// function assignMemberDetails($value){
+//   var_dump($value);
+// $lastname = $value['lastname'];
+// //echo $lastname . '<br>';
+// $firstname = $value['firstname'];
+// $picture = $value['picture'];
+// //var_dump($picture);
+// $age = $value['age'];
+// $gender = $value['gender'];
+// $mail = $value['mail'];
+// $zipCode = $value['zipCode'];
+// $description = $value['description'];
+// $genderSearch = $value['genderSearch'];
+// $match = $value['match'];
+
+// }
+// function assignMembersdetails($MemberInfo)
+// {
+  
+//   $lastname = extractMemberDetails($MemberInfo, 'lastname');
+//   $firstname = extractMemberDetails($MemberInfo, 'firstname');
+//   $picture = extractMemberDetails($MemberInfo, 'picture');
+//   $age = extractMemberDetails($MemberInfo, 'age');
+//   $gender = extractMemberDetails($MemberInfo, 'gender');
+//   $mail = extractMemberDetails($MemberInfo, 'mail');
+//   $zipCode = extractMemberDetails($MemberInfo, 'zipCode');
+//   $description = extractMemberDetails($MemberInfo, 'description');
+//   $genderSearch = extractMemberDetails($MemberInfo, 'genderSearch');
+//   $match = extractMemberDetails($MemberInfo, 'match');
+// }
