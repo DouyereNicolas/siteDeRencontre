@@ -66,12 +66,12 @@
         ?>
 
         <!-- affichage des infos -->
-        <div class="card mt-3 style=" background-color: darkorange;">
+        <div class="card mt-3 bg-transparent">
           <!-- When you need equal height, add .h-100 to the cards-->
           <div class="text-center">
             <img class="VbPictMember mt-3" src="../assets/img/<?= $picture ?>" alt="photo du membre" class="card-img-top" />
           </div>
-          <div class="card-body mt-3">
+          <div class="card-body mt-3 ">
             <h5 class="card-title"><?= $lastname ?> <?= $firstname ?>, <?= $age ?> </h5>
             <p class="card-text"><?= $gender ?> <br>
               <?= $mail ?> <br>

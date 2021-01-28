@@ -175,6 +175,10 @@ form.ndForm label{
   margin: 4px 2px;
   cursor: pointer;
 }
+.VBcard { 
+  background-color: rgba(245, 245, 245, 0.4); 
+}
+
 .slider {
   margin: 0 auto;
   width: 100% !important;
