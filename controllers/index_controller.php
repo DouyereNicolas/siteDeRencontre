@@ -11,16 +11,11 @@ $arrayInfoUser= array(
   'zipCode' => htmlspecialchars($_POST['zipCode']),  
   'genderSearch' => htmlspecialchars($_POST['genderSearch'])
 );
-//echo 'arrayInfoUser = ';
-//var_dump($arrayInfoUser);
-//echo 'dans user_controller : '. $arrayInfoUser['firstname'] . '<br>';
+
 setcookie('arrayInfoUser', serialize($arrayInfoUser), time() + 24 * 3600); 
 //  ** pour 2 jours
 
 };
-  //echo 'formulaire rempli <br>';
-   // recup des valeurs  
-
 
     //initialiser les cookies
     //setcookie('login', $login, time()+24*60*60); // en sec.

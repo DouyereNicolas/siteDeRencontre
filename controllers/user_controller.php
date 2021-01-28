@@ -14,9 +14,7 @@
    // ****** destruction cookies
   function deleteCookie(){
     setcookie('arrayInfoUser', "", time() +1); 
-      // setcookie('login', "", 1);  
-      echo 'dans user_controller <br>';
-  }
+    }
 
 
   
@@ -25,6 +23,3 @@
    // setcookie('pwd', $pwd, time()+24*60*60);
     //header("Location: index.php");
       //affichage résultat en html
-
-
-?>

@@ -9,7 +9,7 @@
 
 @font-face {
   font-family: 'meriendaregular';
-  src: url('../font/merienda-regular-webfont.woff2') format('woff2'),
+  src: url('../font/merienda-regular-webfontbody.woff2') format('woff2'),
        url('../font/merienda-regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
@@ -154,13 +154,26 @@ form.ndForm label{
 .VbPictMember{
   /* width: 220px; */
   height:170px;
-  border : 2px solid red;
+  border-radius: 30px;
   margin-top: 20px;
 }
 
 .VBdiv{
   background-color: darkorange;
   border : 2px solid red;
+}
+
+.VBbutton {
+  background-color: rgb(226, 150, 186);
+  border-radius: 12px;
+  border: 2px solid whitesmoke;
+  color: black;
+  padding: 1px 6px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 .slider {
   margin: 0 auto;
