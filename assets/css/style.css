@@ -18,10 +18,9 @@
 
 body{
   font-family: meriendabold;
-  height: 100vh;
   background: url("../img/fondPagePrincipal.png") center no-repeat;
   background-size: cover;
-  overflow: hidden;
+
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -86,6 +85,11 @@ array{
   }
   form button{
     margin-top : 25px;
+  }
+  .texteCard{
+    z-index: 1;
+    color : #7e5253;
+    font-size: 20px;
   }
 }
 
@@ -519,7 +523,7 @@ form.ndForm label{
 }
 
 .arrow {
-  background: #8e2037;
+  background: #7e5253;
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -574,4 +578,42 @@ form.ndForm label{
   .arrow-prev {
       left: -110px !important;
   }
+
+  .texteCard{
+    z-index: 1;
+    color : #7e5253;
+    font-size: 20px;
+    margin-top : 40px;
+  }
 }
+
+.ndColorCarUser{
+  background-color: transparent;
+  border:4px solid #7e5253;
+  box-shadow: 8px 8px 12px #555;
+  filter:progid:DXImageTransform.Microsoft.Glow(Color=#c0c0c0,Strength=8);
+  zoom: 1;
+}
+
+.ndColorCarUser::before{
+  content: "";
+  background-color: #e5c598;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: 0.8;
+  z-index : 0;
+}
+
+.texteCard{
+  z-index: 1;
+  color : #7e5253;
+  font-size: 20px;
+}
+
+.testImage{
+  border-radius: 50%;
+}
+]

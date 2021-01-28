@@ -6,7 +6,21 @@
       <link rel="stylesheet" href="assets/css/style.css">
     </head>
     <body>
-      
+    <?php
+  if (!empty($_COOKIE["arrayInfoUser"])) {
+    //cookie validde =>  les membres (lovers.php)
+     header("Location: views/lovers.php");
+  } elseif (!empty($_POST)) {
+    // 1ere visite, le formulaire vient d'être envoyé
+    require('controllers/index_controller.php');
+    setUserCookie(); // fonction définie dans index_controller.php
+    //recupération des valeurs de  $_POST<br>
+    // Déclaration d'un tableau associatif pour les info du user
+    // et création du cookie puis => les membres (lovers.php)
+   header("Location: views/lovers.php");
+  } else {
+    //affichage du formulaire à remplir 
+  ?>
       <div class="ndPrincipal">
         <div class="row  m-4 p-0">
           <div class="col-12 col-lg-7 mb-4">
@@ -20,7 +34,7 @@
           </div>
           <div class="col-12 col-lg-5 mt-4">
             <div class="ndContForm container d-flex text-center">
-              <form class="mx-auto ndForm text-center" method="post" action="views/user.php">
+              <form class="mx-auto ndForm text-center" method="post" action="index.php">
                 <p> Inscrivez-Vous </p>
                 <div class="row mt-4">
                   <div class="col-6">
@@ -69,7 +83,9 @@
             </div>  
           </div>
   </div>
-
+  <?php
+  }
+    ?>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

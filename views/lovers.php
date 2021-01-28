@@ -4,6 +4,7 @@
   $arrayCurrentUser = unserialize($_COOKIE["arrayInfoUser"]);
   $lastNameUser = $arrayCurrentUser["lastname"];
   $firstNameUser = $arrayCurrentUser["firstname"];
+  $genderSearch = $arrayCurrentUser['genderSearch'];
 ?>
 <!DOCTYPE html>
 <html>
@@ -30,7 +31,7 @@
       gtag('config', 'UA-31485994-5');
     </script>
 </head>
-<body>
+<body style="overflow : hidden;">
     
 <div class="row m-0 text-white" style="background-color:#ebd2bb;width:100%;height:50px;position:absolute;top:0;left:0;border:2px solid #7e5253">
     <div class="col-4 border">Bonjour, Monsieur <?=$lastNameUser;?> <?=$firstNameUser;?></div>
@@ -43,7 +44,7 @@
         <?php 
             $item = 0;
             foreach($arrayMembers as $key => $value){
-                if($value["gender"] == $arrayCurrentUser["genderSearch"]){
+                if($value["gender"] == $genderSearch){
                     $lastName = $value['lastname'];    
                     $firstName = $value['firstname'];
                     $age = $value['age'];
